@@ -5,38 +5,6 @@ This is a **Flask-based web application** that predicts the most likely disease 
 
 ---
 
-## 📂 Project Structure
-
-```
-
-Medicine\_Recom/
-│
-├── **pycache**/
-├── datasets/
-│   ├── symptoms\_df.csv
-│   ├── precautions\_df.csv
-│   ├── workout\_df.csv
-│   ├── description.csv
-│   ├── medications.csv
-│   └── diets.csv
-│
-├── models/
-│   └── svc.pkl
-│
-├── templates/
-│   ├── index.html
-│   ├── about.html
-│   ├── contact.html
-│   ├── developer.html
-│   └── blog.html
-│
-├── main.py
-└── README.md
-
-````
-
----
-
 ## 🚀 Features
 
 - Input multiple symptoms manually.
@@ -128,22 +96,3 @@ Then open your browser and go to:
 * Model accuracy may vary depending on training data
 * This is not intended for real-world medical use
 
----
-
-## 🙋‍♂️ Author
-
-**Mustafa11300**
-GitHub: [@Mustafa11300](https://github.com/Mustafa11300)
-
----
-
-## 📝 License
-
-This project is for educational purposes only and is not licensed for clinical or commercial use.
-
-```
-
----
-
-Let me know if you want me to generate this as a `.md` file you can download.
-```
