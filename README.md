@@ -94,6 +94,3 @@ Then open your browser and navigate to:
 * **⚕️ Not intended for real medical use**
 
 ---
-
-Would you like this exported as a downloadable `.md` file?
-```
