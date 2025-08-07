@@ -1,98 +1,99 @@
 
-# 🧠 Medicine Recommendation System
+# 🧠 Disease Prediction & Medicine Recommendation System
 
-This is a **Flask-based web application** that predicts the most likely disease based on user-entered symptoms and suggests corresponding **medications, precautions, diets, workouts**, and a **disease description**. It uses a trained Support Vector Classifier (SVC) model and various supporting datasets.
+A local Flask web application that predicts the most likely disease based on user-entered symptoms and recommends medications, precautions, and a description using a trained Support Vector Classifier (SVC) model.
 
 ---
 
 ## 🚀 Features
 
-- Input multiple symptoms manually.
-- Predict disease based on symptoms using ML model.
-- Recommends:
-  - Description of disease
-  - Precautions
-  - Medications
-  - Diet plans
-  - Suggested workouts
-- Web UI built using HTML templates and Flask backend.
+- Input multiple symptoms (comma-separated)
+- Predict disease using a trained ML model
+- Get recommended:
+  - ✔️ Description
+  - 💊 Medications
+  - 🛡️ Precautions
 
 ---
 
-## 🧪 How It Works
+## 🏗️ Tech Stack
 
-1. The model is trained to map input symptoms to a disease using the `svc.pkl` classifier.
-2. User inputs symptoms through the web interface (comma-separated).
-3. The model processes the input, predicts the disease, and fetches all relevant recommendations from the datasets.
+- **Frontend**: HTML, CSS, Jinja2 Templates
+- **Backend**: Python (Flask)
+- **Machine Learning**: Scikit-learn (SVC Model)
+- **Datasets**: CSV files (symptoms, medications, descriptions, precautions)
 
 ---
 
-## 💻 Getting Started
+## ⚙️ Setup Instructions
 
-### 🔧 Prerequisites
-
-- Python 3.x
-- Flask
-- NumPy
-- Pandas
-- scikit-learn
-- Pickle
-
-### 📦 Installation
-
-1. Clone this repository:
+### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/medicine_recommendation.git
-cd medicine_recommendation/Medicine_Recom
+git clone https://github.com/yourusername/medicine-recom.git
+cd medicine-recom
 ````
 
-2. Install dependencies:
+### 2. Create & Activate a Virtual Environment (optional but recommended)
 
 ```bash
-pip install -r requirements.txt
+python -m venv venv
+source venv/bin/activate      # macOS/Linux
+venv\Scripts\activate         # Windows
 ```
 
-> If `requirements.txt` is missing, install manually:
+### 3. Install Required Packages
 
 ```bash
-pip install flask numpy pandas scikit-learn
+pip install flask pandas scikit-learn numpy
 ```
 
----
-
-## 🏃 Running the Application Locally
+### 4. Run the App Locally
 
 ```bash
 python main.py
 ```
 
-Then open your browser and go to:
+Then open your browser and navigate to:
 👉 `http://127.0.0.1:5000`
 
 ---
 
-## 🌐 Pages
+## 💡 How to Use
 
-* `/` → Home (input symptoms & get prediction)
-* `/about` → About the system
-* `/contact` → Contact page
-* `/developer` → Developer information
-* `/blog` → Placeholder for blog content
+1. Open the local web app in your browser.
+
+2. Enter symptoms (comma-separated), e.g.:
+
+   ```
+   headache, nausea, vomiting
+   ```
+
+3. Click **Predict**.
+
+4. View the predicted disease and its:
+
+   * Description
+   * Medications
+   * Precautions
 
 ---
 
-## 📊 Model Used
+## 🧠 ML Model
 
-* **Classifier:** Support Vector Classifier (`svc.pkl`)
-* **Features:** Binary presence/absence of 132 symptoms
-* **Output:** 41 unique diseases
+* **Model Type**: Support Vector Classifier (SVC)
+* **Trained On**: Binary matrix of 132 symptoms
+* **Prediction Output**: One of 41 diseases
 
 ---
 
 ## ⚠️ Limitations
 
-* Only works with symptoms available in the `symptoms_dict`
-* Model accuracy may vary depending on training data
-* This is not intended for real-world medical use
+* Only accepts symptoms that are pre-defined in the `symptoms_dict`
+* Predictions are based on model accuracy and input quality
+* **⚕️ Not intended for real medical use**
 
+---
+
+Would you like this exported as a downloadable `.md` file?
+```
